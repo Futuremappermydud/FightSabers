@@ -40,5 +40,10 @@ namespace FightSabers.UI.Controllers
         {
             flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Statistics);
         }
+        [UIAction("shop-page-act")]
+        private void ShopPageClicked()
+        {
+            flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Shop);
+        }
     }
 }

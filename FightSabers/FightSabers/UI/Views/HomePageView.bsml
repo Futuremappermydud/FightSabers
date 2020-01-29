@@ -9,7 +9,7 @@
   </vertical>
   <!--Updater-->
   <vertical id='updater-layout' size-delta-y='25' pad='5' horizontal-fit='Unconstrained' vertical-fit='Unconstrained'
-            anchor-min-x='0.8' anchor-max-x='0.975' anchor-min-y='0.925' anchor-max-y='0.8'>
+            anchor-min-x='0.8' anchor-max-x='0.975' anchor-min-y='0.925' anchor-max-y='0.75'>
     <text align ='Center' font-size='3' text='~version-text'></text>
     <horizontal pad-top='5'>
       <clickable-text id='latest-release-text' align='Center' font-size='3' text='' face-color='#FD3F92' />
@@ -35,6 +35,14 @@
       </horizontal>
     </vertical>
   </vertical>
+    <!--Coins-->
+  <vertical child-control-height='false' pad-left='125'>
+    <horizontal bg='round-rect-panel' pad-left='5' pad-right='5' pad-bottom='1' pad-top='1'>
+      <text align='Center' font-size='4.2' text='Coins: ' />
+      <text align='Right' font-size='4' text='~coin-count' />
+    </horizontal>
+  </vertical>
+  <!--Links-->
   <bottom-button-panel>
     <button id='github-link-btn' text='Github project' on-click='github-link-act'/>
     <button id='donate-link-btn' italics='true' pref-width='0' text='smol kofi' hover-hint='You can support the project by buying me a coffee!' on-click='donate-link-act'/>

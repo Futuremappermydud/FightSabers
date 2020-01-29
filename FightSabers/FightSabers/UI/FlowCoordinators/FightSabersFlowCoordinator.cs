@@ -64,7 +64,7 @@ namespace FightSabers.UI.FlowCoordinators
                     break;
                 case PageStatus.Quests:
                     controller = BeatSaberUI.CreateViewController<QuestPickerPageController>();
-                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Right);
                     SetRightScreenViewController(null);
                     ProvideInitialViewControllers(controller, null, null, bottomController);
                     SetLeftScreenViewController(BeatSaberUI.CreateViewController<CurrentQuestPageController>(), false);
@@ -79,9 +79,9 @@ namespace FightSabers.UI.FlowCoordinators
                 case PageStatus.Shop:
                     controller = BeatSaberUI.CreateViewController<ShopPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(null);
                     SetRightScreenViewController(null);
                     ProvideInitialViewControllers(controller, null, null, bottomController);
-                    SetLeftScreenViewController(null);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(status), status, null);

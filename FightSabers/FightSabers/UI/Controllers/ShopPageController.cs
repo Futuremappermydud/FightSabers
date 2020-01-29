@@ -1,5 +1,6 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Parser;
+using BeatSaberMarkupLanguage.ViewControllers;
 
 namespace FightSabers.UI.Controllers
 {
@@ -14,31 +15,19 @@ namespace FightSabers.UI.Controllers
         private BSMLParserParams parserParams;
 
         private string _modStatus = "Disable";
-        [UIValue("switch-plugin-btn-status")]
-        public string modStatus
+        private string _one;
+
+        [UIAction("ItemOne")]
+        public string one
         {
-            get { return _modStatus; }
+            get { return _one; }
             private set
             {
-                _modStatus = value;
+                _one = value;
                 NotifyPropertyChanged();
             }
         }
 
-
-
-
-        private string _versionText = "Version 0.0.0";
-        [UIValue("version-text")]
-        public string versionText
-        {
-            get { return _versionText; }
-            private set
-            {
-                _versionText = value;
-                NotifyPropertyChanged();
-            }
-        }
 
         #endregion
 
