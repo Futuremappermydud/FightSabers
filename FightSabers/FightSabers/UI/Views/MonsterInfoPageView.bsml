@@ -7,4 +7,9 @@
       <text text='Monster info' align='Center'/>
     </horizontal>
   </vertical>
+  <vertical child-control-height='false'>
+    <horizontal bg='panel-top' pad-left='15' pad-right='15' pad-top='10' horizontal-fit='PreferredSize'>
+      <text text='Click on any Monster item to the left to view what it looks like, its stats, and its lore.' align='Center'/>
+    </horizontal>
+  </vertical>
 </bg>
