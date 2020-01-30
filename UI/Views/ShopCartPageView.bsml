@@ -1,0 +1,21 @@
+﻿
+
+    
+
+  <vertical child-control-height='true'>
+    <horizontal bg='panel-top' pad-left='2' pad-right='2'  />
+      <text text='Shop Cart'  font-size='8' allign ='Center'/>
+     <horizontal/>
+    <horizontal  pad-left='2' pad-right='2' pad-top='-15'  horizontal-fit='PreferredSize'>
+      <text text='Click Confirm to purchase item with your Monster Coins(patent pending).' align='Center'  />
+    </horizontal>
+    <horizontal bg='round-rect-panel' pad-left='2' pad-right='2' pad-top='-30'  horizontal-fit='PreferredSize'>
+    </horizontal>
+    <verticallayout bg='round-rect-panel'>
+      
+    </verticallayout>
+    <vertical child-control-height='false' padding-top='15' anchor-pos-y='10' />
+    <button text='Confirm' glow-color='Green'/>
+  <vertical/>
+  </vertical>
+

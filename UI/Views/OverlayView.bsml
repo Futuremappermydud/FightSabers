@@ -23,7 +23,7 @@
     </horizontal>
   </vertical>
   <vertical child-control-height='false' pad-left='100'>
-    <horizontal bg='round-rect-panel' pad-left='5' pad-right='5' pad-bottom='1' pad-top='1'>
+    <horizontal bg='round-rect-panel' pad-left='8' pad-right='5' pad-bottom='1' pad-top='1'>
       <img src='FightSabers.Images.tile008.png' align='Left' id='coinimg' />
       <text align='Center' font-size='4.2' text='Coins: ' />
       <text align='Right' font-size='4' text='~coin-count' />

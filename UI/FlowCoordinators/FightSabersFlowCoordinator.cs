@@ -79,7 +79,7 @@ namespace FightSabers.UI.FlowCoordinators
                 case PageStatus.Shop:
                     controller = BeatSaberUI.CreateViewController<ShopPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
-                    SetLeftScreenViewController(null);
+                    SetLeftScreenViewController(BeatSaberUI.CreateViewController<ShopCartPageController>(), false);
                     SetRightScreenViewController(null);
                     ProvideInitialViewControllers(controller, null, null, bottomController);
                     break;

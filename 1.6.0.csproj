@@ -126,6 +126,7 @@
     <Compile Include="UI\Controllers\CharacterStatsPageController.cs" />
     <Compile Include="UI\Controllers\ProfilePageController.cs" />
     <Compile Include="UI\Controllers\QuestPickerPageController.cs" />
+    <Compile Include="UI\Controllers\ShopCartPageController.cs" />
     <Compile Include="UI\Controllers\FightSabersViewController.cs" />
     <Compile Include="UI\Controllers\MonsterInfoPageController.cs" />
     <Compile Include="UI\Controllers\SkillTreePageController.cs" />
@@ -170,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\CurrentQuestPageView.bsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Views\ShopCartPageView.bsml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\BottomPageView.bsml" />
