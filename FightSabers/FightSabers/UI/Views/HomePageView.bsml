@@ -38,6 +38,7 @@
     <!--Coins-->
   <vertical child-control-height='false' pad-left='125'>
     <horizontal bg='round-rect-panel' pad-left='5' pad-right='5' pad-bottom='1' pad-top='1'>
+      <image align='Left' font-size='4' text='~coin-count' />
       <text align='Center' font-size='4.2' text='Coins: ' />
       <text align='Right' font-size='4' text='~coin-count' />
     </horizontal>
