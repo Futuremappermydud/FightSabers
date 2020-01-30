@@ -60,6 +60,7 @@ namespace FightSabers
             BSEvents.menuSceneActive += OnMenuSceneActive;
             BSEvents.gameSceneActive += OnGameSceneActive;
             GameplaySetup.instance.AddTab("FS Modifiers", "FightSabers.UI.Views.FightSabersGameplaySetupView.bsml", FightSabersGameplaySetup.instance);
+            
         }
 
         public void OnApplicationQuit() { }

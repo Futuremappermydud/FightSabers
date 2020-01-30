@@ -5,7 +5,7 @@
     <button id='home-btn' text='Home' pref-width='30' pref-height='15' on-click='home-page-act' />
     <button id='profile-btn' interactable='false' text='Profile' pref-width='30' pref-height='15' on-click='profile-page-act' />
     <button id='stats-btn' interactable='false' text='Stats' pref-width='30' pref-height='15' on-click='stats-page-act' />
-    <button id='shop-btn' interactable='false' text='Shop W.I.P' pref-width='30' pref-height='15' on-click='shop-page-act' />
+    <button id='shop-btn'  text='Shop W.I.P' pref-width='30' pref-height='15' on-click='shop-page-act' />
 
   </horizontal>
 </bg>

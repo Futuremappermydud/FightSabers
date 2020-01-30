@@ -149,6 +149,7 @@
     <Compile Include="Utilities\TaskManager.cs" />
     <Compile Include="Utilities\Tween.cs" />
     <Compile Include="Utilities\Utils.cs" />
+
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="manifest.json" />

@@ -3,18 +3,12 @@
   <!--Main stuff-->
   <vertical child-control-height='false' anchor-min-y='0.1' anchor-max-y='1'>
     <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
-      <text text='Home' align='Center' font-size='8'/>
+      <text text='Shop W.I.P' align='Center' font-size='8'/>
     </horizontal>
-    <vertical bg='round-rect-panel' size-delta-y='45' pad='5'>
-      <horizontal pad-bottom='3'>
-        <text align='Center' bold='true' italics='true' font-size='3.5' rich-text='true' text='Welcome to FightSabers!' />
-        <text align='Center' italics='true' font-size='3' text='This ambitious project is still very new, a lot' />
-      </horizontal>
-      <text align='Center' italics='true' font-size='3' text="of things are planned but it's taking time, sowwy!" />
-      <horizontal pad-top='3'>
-        <text id='creator-text' italics='true' align ='Center' font-size='3' text='Developed by Shoko84'></text>
-
-      </horizontal>
+    <vertical bg='round-rect-panel' size-delta-y='45' pad='54' pad-top='5'>
+      <horizontal/>
+        <button id='shop-btn' text='Item One' pref-width='30' pref-height='15' on-click='Item-One' align='Top' pad-right='15' />
+      <horizontal/>
     </vertical>
   </vertical>
 
