@@ -11,9 +11,7 @@
     </horizontal>
     <horizontal bg='round-rect-panel' pad-left='2' pad-right='2' pad-top='-30'  horizontal-fit='PreferredSize'>
     </horizontal>
-    <verticallayout bg='round-rect-panel'>
-      
-    </verticallayout>
+
     <vertical child-control-height='false' padding-top='15' anchor-pos-y='10' />
     <button text='Confirm' glow-color='Green'/>
   <vertical/>
