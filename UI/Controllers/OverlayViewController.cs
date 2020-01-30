@@ -20,7 +20,7 @@ namespace FightSabers.UI.Controllers
     internal class OverlayViewController : FightSabersViewController
     {
         public override string ResourceName    => "FightSabers.UI.Views.OverlayView.bsml";
-        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabersshop/FightSabers/FightSabers/UI/Views/OverlayView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/OverlayView.bsml";
 
         public static OverlayViewController instance;
 
