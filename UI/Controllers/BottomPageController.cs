@@ -10,7 +10,7 @@ namespace FightSabers.UI.Controllers
     internal class BottomPageController : FightSabersViewController
     {
         public override string ResourceName    => "FightSabers.UI.Views.BottomPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/FightSabers/FightSabers/UI/Views/BottomPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/BottomPageView.bsml";
 
         [UIParams] private BSMLParserParams parserParams;
 

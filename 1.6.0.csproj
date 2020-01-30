@@ -129,7 +129,9 @@
     <Compile Include="UI\Controllers\ShopCartPageController.cs" />
     <Compile Include="UI\Controllers\FightSabersViewController.cs" />
     <Compile Include="UI\Controllers\MonsterInfoPageController.cs" />
-    <Compile Include="UI\Controllers\SkillTreePageController.cs" />
+    <Compile Include="UI\Controllers\SkillTreeAttackPageController.cs" />
+    <Compile Include="UI\Controllers\SkillTreeOtherPageController.cs" />
+    <Compile Include="UI\Controllers\SkillTreeDefensePageController.cs" />
     <Compile Include="UI\Controllers\ShopPageController.cs" />
     <Compile Include="UI\Controllers\BottomPageController.cs" />
     <Compile Include="UI\Controllers\CurrentQuestPageController.cs" />
@@ -164,7 +166,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="UI\Views\SkillTreePageView.bsml" />
+    <EmbeddedResource Include="UI\Views\SkillTreeAttackPageView.bsml" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="UI\Views\SkillTreeDefensePageView.bsml" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="UI\Views\SkillTreeOtherPageView.bsml" />
   </ItemGroup>
     <ItemGroup>
     <EmbeddedResource Include="UI\Views\ShopPageView.bsml" />

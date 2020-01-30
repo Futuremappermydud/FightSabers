@@ -16,7 +16,7 @@ namespace FightSabers.UI.Controllers
     internal class CurrentQuestPageController : FightSabersViewController
     {
         public override string ResourceName    => "FightSabers.UI.Views.CurrentQuestPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/CurrentQuestPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/CurrentQuestPageView.bsml";
 
         public static CurrentQuestPageController instance;
 

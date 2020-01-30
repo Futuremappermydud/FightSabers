@@ -49,10 +49,10 @@ namespace FightSabers.UI.FlowCoordinators
                     ProvideInitialViewControllers(controller, null, null, bottomController);
                     break;
                 case PageStatus.Skills:
-                    controller = BeatSaberUI.CreateViewController<SkillTreePageController>();
+                    controller = BeatSaberUI.CreateViewController<SkillTreeAttackPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
-                    SetLeftScreenViewController(null);
-                    SetRightScreenViewController(null);
+                    SetLeftScreenViewController(BeatSaberUI.CreateViewController<SkillTreeDefensePageController>(), false);
+                    SetRightScreenViewController(BeatSaberUI.CreateViewController<SkillTreeOtherPageController>(), false);
                     ProvideInitialViewControllers(controller, null, null, bottomController);
                     break;
                 case PageStatus.Profile:

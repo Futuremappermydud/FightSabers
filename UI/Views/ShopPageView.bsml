@@ -9,9 +9,9 @@
   </vertical>  
   <vertical bg='round-rect-panel'  pad-top='15' pad='105' pad-left='5' anchor-pos-x='0' anchor-pos-y='10' spacing='17' >
     <horizontal  />
-     <button id='shop-btn'  text='Item Saber' font-size='4' pref-width='25' pref-height='15' on-click='Item-One' glow-color='Pink'  />
-     <button id='shop-btn'  text='Item Saber' font-size='4' pref-width='25' pref-height='15' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-    <button id='shop-btn'  text='Item Saber' font-size='4' pref-width='25' pref-height='15' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+     <button id='shop-btn'  text='Platforms' font-size='6' pref-width='55' pref-height='15' on-click='Item-One' glow-color='Pink'  />
+     <button id='shop-btn'  text='Sabers' font-size='6' pref-width='55' pref-height='15' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+    <button id='shop-btn'  text='Notes' font-size='6' pref-width='55' pref-height='15' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
     <horizontal/>
   </vertical>
 </bg>
