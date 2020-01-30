@@ -16,7 +16,8 @@ namespace FightSabers.UI.FlowCoordinators
             Profile,
             Quests,
             Statistics,
-            Shop
+            Shop,
+            Contributors
         }
 
         public FlowCoordinator      oldCoordinator;
@@ -80,6 +81,13 @@ namespace FightSabers.UI.FlowCoordinators
                     controller = BeatSaberUI.CreateViewController<ShopPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
                     SetLeftScreenViewController(BeatSaberUI.CreateViewController<ShopCartPageController>(), false);
+                    SetRightScreenViewController(null);
+                    ProvideInitialViewControllers(controller, null, null, bottomController);
+                    break;
+                case PageStatus.Contributors:
+                    controller = BeatSaberUI.CreateViewController<ContributorsPageController>();
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(null);
                     SetRightScreenViewController(null);
                     ProvideInitialViewControllers(controller, null, null, bottomController);
                     break;

@@ -1,5 +1,6 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Parser;
+using FightSabers.UI.FlowCoordinators;
 
 namespace FightSabers.UI.Controllers
 {
@@ -105,6 +106,12 @@ namespace FightSabers.UI.Controllers
         private void OpenDonateLink()
         {
             System.Diagnostics.Process.Start("https://ko-fi.com/shoko84");
+        }
+
+        [UIAction("cont-page-act")]
+        private void HomePageClicked()
+        {
+            flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Contributors);
         }
 
         [UIAction("bug-link-act")]

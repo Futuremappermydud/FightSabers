@@ -46,8 +46,9 @@
     <bg/>
 
   <bottom-button-panel>
-    <button id='github-link-btn' text='Github project' on-click='github-link-act'/>
+    <button id='github-link-btn' text='Github project' on-click='github-link-act' pref-width='2' pref-height='15' />
     <button id='donate-link-btn' italics='true' pref-width='0' text='smol kofi' hover-hint='You can support the project by buying me a coffee!' on-click='donate-link-act'/>
-    <button id='bug-link-btn' text='Found a bug?' hover-hint='Let me know if you think have found a bug!' on-click='bug-link-act'/>
+    <button id='bug-link-btn' text='Found a bug?' hover-hint='Let me know if you think have found a bug!' on-click='bug-link-act' pref-width='2' pref-height='15'/>
+    <button id='contributors-btn'  text='Contributors' pref-width='2' pref-height='15' on-click='cont-page-act' />
   </bottom-button-panel>
 </bg>

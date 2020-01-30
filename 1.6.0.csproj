@@ -137,6 +137,7 @@
     <Compile Include="UI\Controllers\CurrentQuestPageController.cs" />
     <Compile Include="UI\Controllers\OverlayViewController.cs" />
     <Compile Include="UI\Controllers\HomePageController.cs" />
+    <Compile Include="UI\Controllers\ContributorsPageController.cs" />
     <Compile Include="Models\MonsterStatus.cs" />
     <Compile Include="Models\SceneState.cs" />
     <Compile Include="Settings\SaveDataManager.cs" />
@@ -159,6 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\HomePageView.bsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Views\ContributorsPageView.bsml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\OverlayView.bsml">
