@@ -1,10 +1,10 @@
 ﻿<bg>
   <vertical child-control-height='false'>
-    <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+    <horizontal bg='panel-top' pad-left='7' pad-right='7' horizontal-fit='PreferredSize'>
       <text text='FightSabers' align='Center' font-size='8'/>  
-      <text bg='round-rect-panel' text=' Skill tree' align='Center' pad='3'/>
+      <text bg='round-rect-panel' text=' Other Skills' align='Center' pad='3'/>
     </horizontal>
-    <vertical pad-top='-49' pad-right='116' spacing='-16'>
+    <vertical pad-top='-49' pad-right='86' spacing='-16'>
       <button text='Attack' pref-width='29' pref-height='9'/>
       <button text='Defense' pref-width='29' pref-height='9'/>
       <button text='Other' pref-width='29' pref-height='9'/>
