@@ -13,6 +13,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Image = UnityEngine.UI.Image;
+using FightSabers;
 
 namespace FightSabers.UI.Controllers
 {
@@ -31,6 +32,18 @@ namespace FightSabers.UI.Controllers
 
         [UIComponent("switch-fightsabers-btn")]
         private Button _openFightSabersButton;
+
+        public int _coincount = 0;
+        [UIValue("coin-count")]
+        public int coincount
+        {
+            get { return _coincount; }
+            private set
+            {
+                _coincount = value;
+                NotifyPropertyChanged();
+            }
+        }
 
         [UIComponent("progress-bar-img")]
         private Image _progressBarImage;

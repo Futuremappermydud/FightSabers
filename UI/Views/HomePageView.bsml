@@ -1,5 +1,5 @@
 ﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
-  <!--Plugin status-->
+
   <vertical id='plugin-status-layout' bg='round-rect-panel' size-delta-y='25' pad='5' horizontal-fit='Unconstrained' vertical-fit='Unconstrained'
             anchor-min-x='0.025' anchor-max-x='0.25' anchor-min-y='0.85' anchor-max-y='0.8'>
     <horizontal pad-bottom='5'>
@@ -7,7 +7,7 @@
     </horizontal>
     <button id='switch-plugin-btn' font-size='3' pref-width='20' pref-height='7' text='~switch-plugin-btn-status' on-click='plugin-status-act' word-wrapping='false' />
   </vertical>
-  <!--Updater-->
+
   <vertical id='updater-layout' size-delta-y='25' pad='5' horizontal-fit='Unconstrained' vertical-fit='Unconstrained'
             anchor-min-x='0.8' anchor-max-x='0.975' anchor-min-y='0.925' anchor-max-y='0.75'>
     <text align ='Center' font-size='3' text='~version-text'></text>
@@ -15,7 +15,7 @@
       <clickable-text id='latest-release-text' align='Center' font-size='3' text='' face-color='#FD3F92' />
     </horizontal>
   </vertical>
-  <!--Main stuff-->
+
   <vertical child-control-height='false' anchor-min-y='0.1' anchor-max-y='1'>
     <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
       <text text='Home' align='Center' font-size='8'/>
@@ -35,14 +35,16 @@
       </horizontal>
     </vertical>
   </vertical>
-    <!--Coins-->
+  <bg/>
   <vertical child-control-height='false' pad-left='125'>
     <horizontal bg='round-rect-panel' pad-left='5' pad-right='5' pad-bottom='1' pad-top='1'>
+      <img src='FightSabers.Images.tile008.png' align='Left' id='coinimg' />
       <text align='Center' font-size='4.2' text='Coins: ' />
       <text align='Right' font-size='4' text='~coin-count' />
     </horizontal>
   </vertical>
-  <!--Links-->
+    <bg/>
+
   <bottom-button-panel>
     <button id='github-link-btn' text='Github project' on-click='github-link-act'/>
     <button id='donate-link-btn' italics='true' pref-width='0' text='smol kofi' hover-hint='You can support the project by buying me a coffee!' on-click='donate-link-act'/>

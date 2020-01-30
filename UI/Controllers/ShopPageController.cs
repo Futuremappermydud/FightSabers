@@ -7,7 +7,7 @@ namespace FightSabers.UI.Controllers
     internal class ShopPageController : FightSabersViewController
     {
         public override string ResourceName => "FightSabers.UI.Views.ShopPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabersshop/FightSabers/FightSabers/UI/Views/ShopPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/ShopPageView.bsml";
 
         #region Properties
 

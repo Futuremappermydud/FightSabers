@@ -33,6 +33,7 @@ namespace FightSabers
         internal static Ref<PluginConfig>           config;
         internal static IConfigProvider             configProvider;
         internal static PluginLoader.PluginMetadata fightSabersMetadata;
+        public static int UserCoins;
 
         public static SceneState CurrentSceneState { get; private set; } = SceneState.Menu;
         #endregion

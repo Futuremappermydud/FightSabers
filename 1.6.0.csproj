@@ -37,11 +37,11 @@
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Libs\0Harmony.1.2.0.1.dll</HintPath>
     </Reference>
     <Reference Include="BSML">
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins\BSML.dll</HintPath>
+      <HintPath>C:\bs\BSML.dll</HintPath>
     </Reference>
     <Reference Include="BS_Utils, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins\BS_Utils.dll</HintPath>
+      <HintPath>C:\bs\BS_Utils.dll</HintPath>
     </Reference>
     <Reference Include="HMLib">
       <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Beat Saber_Data\Managed\HMLib.dll</HintPath>
@@ -172,6 +172,33 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\BottomPageView.bsml" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile000.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile001.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile002.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile003.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile004.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile005.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile006.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile007.png" />
+  </ItemGroup>
+ <ItemGroup>
+    <EmbeddedResource Include="Images\tile008.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\QuestPickerPageView.bsml">
