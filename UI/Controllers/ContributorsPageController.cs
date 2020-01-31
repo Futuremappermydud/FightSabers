@@ -18,5 +18,10 @@ namespace FightSabers.UI.Controllers
         {
             flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Home);
         }
+        [UIAction("donate-link-act")]
+        private void OpenDonateLink()
+        {
+            System.Diagnostics.Process.Start("https://ko-fi.com/shoko84");
+        }
     }
 }

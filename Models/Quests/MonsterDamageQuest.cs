@@ -36,6 +36,7 @@ namespace FightSabers.Models.Quests
         {
             UnlinkGameEvents();
             base.Complete();
+
         }
 
         public override void LinkGameEvents()

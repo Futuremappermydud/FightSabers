@@ -1,17 +1,11 @@
 <bg>
   <vertical child-control-height='false'>
     <horizontal bg='panel-top' pad-left='7' pad-right='7' horizontal-fit='PreferredSize'>
-      <text text='Helpers and Contributors' align='Center' font-size='8'/>  
+      <text text='Settings' align='Center' font-size='8' pad-left='15' pad-right='15'/>  
     </horizontal>
     <vertical pad-top='0' pad-right='86' spacing='-16'>
 
       <text text='hlwe' pref-width='29' pref-height='29'/>
     </vertical>
   </vertical>
-  <bg>
-  <bottom-button-panel>
-  <button id='home-btn' text='Home' pref-width='30' pref-height='15' on-click='home-page-act' />
-    <button text='ooooooooooooof'/>
-  </bottom-button-panel>
-</bg>
 </bg>

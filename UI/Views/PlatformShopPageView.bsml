@@ -9,26 +9,23 @@
   </vertical>
   <horizontal child-control-height='false'>
   <vertical bg='round-rect-panel'  pad-top='-17' pad='105' pad-left='38' anchor-pos-x='0' anchor-pos-y='-10' spacing='19' >
-    <horizontal >
-      <button id='shop-btn'  text='1' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='2' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='3' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='4' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='5' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+    <horizontal spacing='19' >
+      <button id='shop-btn'  text='1' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
+      <button id='shop-btn'  text='2' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+      <button id='shop-btn'  text='3' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+     
     </horizontal>
-    <horizontal >
-      <button id='shop-btn'  text='1' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='2' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='3' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='4' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='5' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+    <horizontal spacing='19' >
+      <button id='shop-btn'  text='4' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
+      <button id='shop-btn'  text='5' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+      <button id='shop-btn'  text='6' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+     
     </horizontal>
-    <horizontal >
-      <button id='shop-btn'  text='1' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='2' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='3' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='4' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='5' font-size='6' pref-width='28' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+    <horizontal spacing='19' >
+      <button id='shop-btn'  text='7' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
+      <button id='shop-btn'  text='8' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+      <button id='shop-btn'  text='9' font-size='6' pref-width='34 ' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
+     
     </horizontal>
 
 
