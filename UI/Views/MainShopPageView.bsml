@@ -1,0 +1,17 @@
+<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+
+  <!--Main stuff-->
+  
+  <vertical child-control-height='false' anchor-min-y='0.1' anchor-max-y='1'>
+    <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+      <text text='Shop W.I.P' align='Center' font-size='8'/>
+    </horizontal>
+  </vertical>  
+  <vertical bg='round-rect-panel'  pad-top='15' pad='105' pad-left='5' anchor-pos-x='0' anchor-pos-y='10' spacing='17' >
+    <horizontal allign='Center' />
+     <button id='plat-page-act' allign='Center' text='Platforms' font-size='6' pref-width='55' pref-height='15' on-click='plat-page-act' glow-color='Pink'  />
+     <button id='saber-page-act' allign='Center' text='Sabers' font-size='6' pref-width='55' pref-height='15' on-click='saber-page-act' glow-color='Pink' anchor-pos-x='15' />
+    <button id='note-button' allign='Center' text='Notes' font-size='6' pref-width='55' pref-height='15' on-click='note-page-act' on-hover='note-hover' glow-color='Pink' anchor-pos-x='15' />
+    <horizontal/>
+  </vertical>
+</bg>

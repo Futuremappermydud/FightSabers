@@ -39,6 +39,9 @@
     <Reference Include="BSML">
       <HintPath>C:\bs\BSML.dll</HintPath>
     </Reference>
+    <Reference Include="CustomSabers">
+      <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Beat Saber\Plugins\CustomSaber.dll</HintPath>
+    </Reference>
     <Reference Include="BS_Utils, Version=1.3.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\bs\BS_Utils.dll</HintPath>
@@ -132,12 +135,17 @@
     <Compile Include="UI\Controllers\SkillTreeAttackPageController.cs" />
     <Compile Include="UI\Controllers\SkillTreeOtherPageController.cs" />
     <Compile Include="UI\Controllers\SkillTreeDefensePageController.cs" />
-    <Compile Include="UI\Controllers\ShopPageController.cs" />
+    <Compile Include="UI\Controllers\MainShopPageController.cs" />
+    <Compile Include="UI\Controllers\SaberPreviewPageController.cs" />
+    <Compile Include="UI\Controllers\NoteShopPageController.cs" />
+    <Compile Include="UI\Controllers\SaberShopPageController.cs" />
+    <Compile Include="UI\Controllers\PlatformShopPageController.cs" />
     <Compile Include="UI\Controllers\BottomPageController.cs" />
     <Compile Include="UI\Controllers\CurrentQuestPageController.cs" />
     <Compile Include="UI\Controllers\OverlayViewController.cs" />
     <Compile Include="UI\Controllers\HomePageController.cs" />
     <Compile Include="UI\Controllers\ContributorsPageController.cs" />
+    <Compile Include="UI\Controllers\SettingsPageController.cs" />
     <Compile Include="Models\MonsterStatus.cs" />
     <Compile Include="Models\SceneState.cs" />
     <Compile Include="Settings\SaveDataManager.cs" />
@@ -172,6 +180,9 @@
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\SkillTreeAttackPageView.bsml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\Views\SettingsPageView.bsml" />
+  </ItemGroup>
  <ItemGroup>
     <EmbeddedResource Include="UI\Views\SkillTreeDefensePageView.bsml" />
   </ItemGroup>
@@ -179,7 +190,19 @@
     <EmbeddedResource Include="UI\Views\SkillTreeOtherPageView.bsml" />
   </ItemGroup>
     <ItemGroup>
-    <EmbeddedResource Include="UI\Views\ShopPageView.bsml" />
+    <EmbeddedResource Include="UI\Views\MainShopPageView.bsml" />
+  </ItemGroup>
+      <ItemGroup>
+    <EmbeddedResource Include="UI\Views\saberPreview.bsml" />
+  </ItemGroup>
+      <ItemGroup>
+    <EmbeddedResource Include="UI\Views\SaberShopPageView.bsml" />
+  </ItemGroup>
+      <ItemGroup>
+    <EmbeddedResource Include="UI\Views\PlatformShopPageView.bsml" />
+  </ItemGroup>
+      <ItemGroup>
+    <EmbeddedResource Include="UI\Views\NoteShopPageView.bsml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\Views\CurrentQuestPageView.bsml" />
@@ -191,28 +214,7 @@
     <EmbeddedResource Include="UI\Views\BottomPageView.bsml" />
   </ItemGroup>
  <ItemGroup>
-    <EmbeddedResource Include="Images\tile000.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile001.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile002.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile003.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile004.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile005.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile006.png" />
-  </ItemGroup>
- <ItemGroup>
-    <EmbeddedResource Include="Images\tile007.png" />
+    <EmbeddedResource Include="download.png" />
   </ItemGroup>
  <ItemGroup>
     <EmbeddedResource Include="Images\tile008.png" />

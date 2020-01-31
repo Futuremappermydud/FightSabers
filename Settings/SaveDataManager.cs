@@ -21,7 +21,7 @@ namespace FightSabers.Settings
 
         private SaveDataManager()
         {
-            _pathConfigFolder = Path.Combine(Environment.CurrentDirectory, "FightSabers");
+            _pathConfigFolder = Path.Combine(Environment.CurrentDirectory, "UserData");
             _pathSaveFile = Path.Combine(_pathConfigFolder, "FightSabersSaveData.fs");
         }
 

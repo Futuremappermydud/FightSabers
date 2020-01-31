@@ -33,7 +33,6 @@ namespace FightSabers
         internal static Ref<PluginConfig>           config;
         internal static IConfigProvider             configProvider;
         internal static PluginLoader.PluginMetadata fightSabersMetadata;
-        public static int UserCoins;
 
         public static SceneState CurrentSceneState { get; private set; } = SceneState.Menu;
         #endregion
@@ -60,7 +59,6 @@ namespace FightSabers
             BSEvents.menuSceneActive += OnMenuSceneActive;
             BSEvents.gameSceneActive += OnGameSceneActive;
             GameplaySetup.instance.AddTab("FS Modifiers", "FightSabers.UI.Views.FightSabersGameplaySetupView.bsml", FightSabersGameplaySetup.instance);
-            
         }
 
         public void OnApplicationQuit() { }

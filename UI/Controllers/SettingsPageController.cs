@@ -5,10 +5,10 @@ using FightSabers.UI.FlowCoordinators;
 
 namespace FightSabers.UI.Controllers
 {
-    internal class ContributorsPageController : FightSabersViewController
+    internal class SettingsPageController : FightSabersViewController
     {
-        public override string ResourceName => "FightSabers.UI.Views.ContributorsPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/ContributorsPageView.bsml";
+        public override string ResourceName => "FightSabers.UI.Views.SettingsPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/SettingsPageView.bsml";
 
         [UIParams]
         private BSMLParserParams parserParams;
