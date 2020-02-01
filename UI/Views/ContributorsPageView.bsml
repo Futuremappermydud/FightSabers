@@ -8,7 +8,9 @@
       <text text='hlwe' pref-width='29' pref-height='29'/>
     </vertical>
   </vertical>
+<bg>
   <bottom-button-panel>
   <button id='home-btn' text='Home' pref-width='30' pref-height='15' on-click='home-page-act' />
   </bottom-button-panel>
+</bg>
 </bg>
