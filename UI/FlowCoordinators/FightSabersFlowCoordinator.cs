@@ -5,10 +5,19 @@ using BeatSaberMarkupLanguage.ViewControllers;
 using FightSabers.UI.Controllers;
 using HMUI;
 
+
+
 namespace FightSabers.UI.FlowCoordinators
 {
     internal class FightSabersFlowCoordinator : FlowCoordinator
     {
+
+
+        public void Awake()
+        {
+         BeatSaberUI.CreateViewController<SaberPreviewPageController>();
+            
+        }
         public enum PageStatus
         {
             Home,
@@ -17,7 +26,11 @@ namespace FightSabers.UI.FlowCoordinators
             Quests,
             Statistics,
             Shop,
-            Contributors
+            Contributors,
+            Sabershop,
+            Noteshop,
+            Platformshop,
+            Settings
         }
 
         public FlowCoordinator      oldCoordinator;
@@ -78,7 +91,28 @@ namespace FightSabers.UI.FlowCoordinators
                     SetRightScreenViewController(BeatSaberUI.CreateViewController<ModifierStatsPageController>(), false);
                     break;
                 case PageStatus.Shop:
-                    controller = BeatSaberUI.CreateViewController<ShopPageController>();
+                    controller = BeatSaberUI.CreateViewController<MainShopPageController>();
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(null);
+                    SetRightScreenViewController(null);
+                    ProvideInitialViewControllers(controller, null, null, bottomController);
+                    break;
+                case PageStatus.Sabershop:
+                    controller = BeatSaberUI.CreateViewController<SaberShopPageController>();
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(BeatSaberUI.CreateViewController<ShopCartPageController>(), false);
+                    SetRightScreenViewController(BeatSaberUI.CreateViewController<SaberPreviewPageController>(), false);
+                    ProvideInitialViewControllers(controller, null, null, bottomController);
+                    break;
+                case PageStatus.Noteshop:
+                    controller = BeatSaberUI.CreateViewController<NoteShopPageController>();
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(BeatSaberUI.CreateViewController<ShopCartPageController>(), false);
+                    SetRightScreenViewController(null);
+                    ProvideInitialViewControllers(controller, null, null, bottomController);
+                    break;
+                case PageStatus.Platformshop:
+                    controller = BeatSaberUI.CreateViewController<PlatformShopPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
                     SetLeftScreenViewController(BeatSaberUI.CreateViewController<ShopCartPageController>(), false);
                     SetRightScreenViewController(null);
@@ -86,6 +120,13 @@ namespace FightSabers.UI.FlowCoordinators
                     break;
                 case PageStatus.Contributors:
                     controller = BeatSaberUI.CreateViewController<ContributorsPageController>();
+                    ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
+                    SetLeftScreenViewController(null);
+                    SetRightScreenViewController(null);
+                    ProvideInitialViewControllers(controller, null, null, bottomController);
+                    break;
+                case PageStatus.Settings:
+                    controller = BeatSaberUI.CreateViewController<SettingsPageController>();
                     ReplaceTopViewController(controller, null, false, ViewController.SlideAnimationDirection.Left);
                     SetLeftScreenViewController(null);
                     SetRightScreenViewController(null);

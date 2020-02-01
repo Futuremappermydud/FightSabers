@@ -10,7 +10,7 @@ namespace FightSabers.UI.Controllers
     internal class BottomPageController : FightSabersViewController
     {
         public override string ResourceName    => "FightSabers.UI.Views.BottomPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/BottomPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/BottomPageView.bsml";
 
         [UIParams] private BSMLParserParams parserParams;
 
@@ -23,6 +23,11 @@ namespace FightSabers.UI.Controllers
         private void SkillsPageClicked()
         {
             flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Skills);
+        }
+        [UIAction("settings-page-act")]
+        private void SettingsPageClicked()
+        {
+            flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Settings);
         }
         [UIAction("home-page-act")]
         private void HomePageClicked()

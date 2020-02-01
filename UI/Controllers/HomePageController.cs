@@ -1,13 +1,15 @@
 ﻿using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Parser;
+using FightSabers.Settings;
 using FightSabers.UI.FlowCoordinators;
+using System.Linq;
 
 namespace FightSabers.UI.Controllers
 {
     internal class HomePageController : FightSabersViewController
     {
         public override string ResourceName => "FightSabers.UI.Views.HomePageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/HomePageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/HomePageView.bsml";
 
 
         #region Properties
@@ -63,9 +65,9 @@ namespace FightSabers.UI.Controllers
             }
         }
 
-        public int _coincount = 0;
+        public string _coincount = "0";
         [UIValue("coin-count")]
-        public int coincount
+        public string coincount
         {
             get { return _coincount; }
             private set
@@ -83,9 +85,14 @@ namespace FightSabers.UI.Controllers
         {
             base.DidActivate(firstActivation, type);
             versionText = $"Version {Plugin.fightSabersMetadata.Version}";
+            coincount = GetNumbers($"Coins {SaveDataManager.instance.SaveData.Coins}");
             RefreshPageUI();
         }
-        
+        private static string GetNumbers(string input)
+        {
+            return new string(input.Where(c => char.IsDigit(c)).ToArray());
+        }
+
         [UIAction("plugin-status-act")]
         private void PluginSwitchAction()
         {

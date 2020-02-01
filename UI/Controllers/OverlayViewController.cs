@@ -20,7 +20,7 @@ namespace FightSabers.UI.Controllers
     internal class OverlayViewController : FightSabersViewController
     {
         public override string ResourceName    => "FightSabers.UI.Views.OverlayView.bsml";
-        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/OverlayView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/OverlayView.bsml";
 
         public static OverlayViewController instance;
 
@@ -33,9 +33,9 @@ namespace FightSabers.UI.Controllers
         [UIComponent("switch-fightsabers-btn")]
         private Button _openFightSabersButton;
 
-        public int _coincount = 0;
+        public string _coincount;
         [UIValue("coin-count")]
-        public int coincount
+        public string coincount
         {
             get { return _coincount; }
             private set
@@ -186,8 +186,14 @@ namespace FightSabers.UI.Controllers
             //Current exp
             currentExpText = $"0 / {ExperienceSystem.instance.TotalNeededExperienceForNextLevel}";
             new UnityTask(FillExperienceBar(0, SaveDataManager.instance.SaveData.currentExp, 3.5f));
+            //Coins
+            coincount = GetNumbers($"Coins {SaveDataManager.instance.SaveData.Coins}");
+ 
         }
-
+        private static string GetNumbers(string input)
+        {
+            return new string(input.Where(c => char.IsDigit(c)).ToArray());
+        }
         #region Animation methods
 
         public IEnumerator FillExperienceBar(uint currentExp, uint toExp, float delayBefore = 0f)

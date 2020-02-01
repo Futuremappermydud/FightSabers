@@ -11,6 +11,7 @@
 <bg>
   <bottom-button-panel>
   <button id='home-btn' text='Home' pref-width='30' pref-height='15' on-click='home-page-act' />
+    <button id='donate-link-btn' italics='true' pref-width='0' text='smol kofi' hover-hint='You can support the project by buying me a coffee!' on-click='donate-link-act'/>
   </bottom-button-panel>
 </bg>
 </bg>

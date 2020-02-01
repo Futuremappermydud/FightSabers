@@ -1,9 +1,8 @@
 ﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'
     id='main-background'>
-  <vertical spacing='0'>
-    <horizontal />
-    <horizontal />
-    <horizontal bg='round-rect-panel' horizontal-fit='PreferredSize'>
+  <vertical spacing='0' bg='round-rect-panel' pad='5  '>
+
+    <horizontal bg='round-rect-panel' horizontal-fit='PreferredSize'  pad='5  '>
       <button id='switch-fightsabers-btn' pref-width='45' text='~fightsabers-btn-status' on-click='switch-fightsabers-act'/>
     </horizontal>
     <horizontal>
@@ -22,8 +21,8 @@
       </vertical>
     </horizontal>
   </vertical>
-  <vertical child-control-height='false' pad-left='100'>
-    <horizontal bg='round-rect-panel' pad-left='6' pad-right='3' pad-bottom='1' pad-top='1'>
+  <vertical child-control-height='false' pad-left='70' pad-top='45'>
+    <horizontal  pad-left='6' pad-right='7' pad-bottom='1' pad-top='1'>
       <img src='FightSabers.Images.tile008.png' align='Left' id='coinimg' />
       <text align='Center' font-size='4.2' text='Coins: ' />
       <text align='Right' font-size='4' text='~coin-count' />

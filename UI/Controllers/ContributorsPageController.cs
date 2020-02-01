@@ -8,7 +8,7 @@ namespace FightSabers.UI.Controllers
     internal class ContributorsPageController : FightSabersViewController
     {
         public override string ResourceName => "FightSabers.UI.Views.ContributorsPageView.bsml";
-        public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/ContributorsPageView.bsml";
+        public override string ContentFilePath => "C:/Users/Owens/Documents/GitHub/FightSabershop/UI/Views/ContributorsPageView.bsml";
 
         [UIParams]
         private BSMLParserParams parserParams;
@@ -17,6 +17,11 @@ namespace FightSabers.UI.Controllers
         private void HomePageClicked()
         {
             flowCoordinatorOwner.ActivatePage(FightSabersFlowCoordinator.PageStatus.Home);
+        }
+        [UIAction("donate-link-act")]
+        private void OpenDonateLink()
+        {
+            System.Diagnostics.Process.Start("https://ko-fi.com/shoko84");
         }
     }
 }
