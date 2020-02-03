@@ -1,34 +1,42 @@
 <bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='https://monkeymanboy.github.io/BSML-Docs/ https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
-
   <!--Main stuff-->
-  
   <vertical child-control-height='false' anchor-min-y='0.1' anchor-max-y='1'>
     <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
       <text text='Platform Shop' align='Center' font-size='8'/>
     </horizontal>
+    <horizontal vertical-fit='PreferredSize' spacing='-5' child-expand-width='false' >
+      <vertical horizontal-fit='PreferredSize' pref-height='70' spacing='-5'>
+        <horizontal  >
+          <text text='Low-tier' align='Center' font-size='5' color='#A8A8A8' italics='true'/>
+        </horizontal>
+        <vertical spacing='12'>
+          <page-button dir='Up' event-click='saberList#PageUp'/>
+          <list id='saberList' expand-cell='true' select-cell='saberSelect' pref-height='20'/>
+          <page-button dir='Down' event-click='saberList#PageDown'/>
+        </vertical>
+      </vertical>
+      <vertical horizontal-fit='PreferredSize' pref-height='70' spacing='-5'>
+        <horizontal  >
+          <text text='Mid-tier' align='Center' font-size='5' color='#9E93CC' italics='true'/>
+        </horizontal>
+        <vertical spacing='6'>
+          <page-button event-click='PlatformsList#PageUp' direction='Up'></page-button>
+          <list id='PlatformsList' expand-cell='true' select-cell='PlatformSelect' pref-height='20' visible-cells='9'/>
+          <page-button event-click='PlatformsList#PageDown' direction='Down'></page-button>
+        </vertical>
+      </vertical>
+      
+      <vertical horizontal-fit='PreferredSize' pref-height='70' spacing='-5'>
+        <horizontal  pref-width='10'>
+          <text text='High-tier' align='Center' font-size='5' color='#ffc0cb' italics='true'  />
+        </horizontal>
+        <vertical spacing='6'>
+          <page-button dir='Up' event-click='saberList#PageUp'/>
+          <list id='saberList' expand-cell='true' select-cell='saberSelect' pref-height='20' visible-cells='9'/>
+          <page-button dir='Down' event-click='saberList#PageDown'/>
+        </vertical>
+      </vertical>
+      
+    </horizontal>
   </vertical>
-  <horizontal child-control-height='false'>
-  <vertical bg='round-rect-panel'  pad-top='-17' pad='105' pad-left='38' anchor-pos-x='0' anchor-pos-y='-10' spacing='19' >
-    <horizontal spacing='19' >
-      <button id='shop-btn'  text='1' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='2' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='3' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-     
-    </horizontal>
-    <horizontal spacing='19' >
-      <button id='shop-btn'  text='4' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='5' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='6' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-     
-    </horizontal>
-    <horizontal spacing='19' >
-      <button id='shop-btn'  text='7' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink'  />
-      <button id='shop-btn'  text='8' font-size='6' pref-width='34' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-      <button id='shop-btn'  text='9' font-size='6' pref-width='34 ' pref-height='18' on-click='Item-One' glow-color='Pink' anchor-pos-x='15' />
-     
-    </horizontal>
-
-
-  </vertical>
-  </horizontal>
 </bg>
