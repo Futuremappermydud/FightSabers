@@ -1,13 +1,49 @@
 ﻿<bg>
   <vertical child-control-height='false'>
-    <horizontal vertical-fit='PreferredSize' anchor-min-y='-10'>
-
-      <image id='img'  pref-height='30' pref-width='30' Scale-X='10'></image>
-
-      <text text='~Name' color='Blue'/>
-    
-
-
+    <!-- Name -->
+    <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
+      <vertical    >
+          
+      <text text='~Name' color='Orange' align='Center' font-size='8'/>
+        
+    </vertical>
     </horizontal>
+    <!--Avatar -->
+    <horizontal horizontal-fit='PreferredSize'  pad-bottom='35' pad-right='105'  >
+      <raw-image id='img' pref-height='35' pref-width='35' ></raw-image>
+    </horizontal>
+    
   </vertical>
+  <vertical pad-top='15' pad-bottom='10' pad-left='75' spacing='3'>
+    <!--Stats -->
+    <vertical  spacing='3'>
+
+      <stack id='progress-bar-stack' horizontal-fit='PreferredSize' vertical-fit='PreferredSize'>
+        <img id='progress-bg-bar-img' pref-width='70' pref-height='7'/>
+        <img id='progress-bar-img' pref-width='70' pref-height='7'/>
+        <text id='experienceContainerState' text='~experienceContainerState' align='Center' font-size='4.5'></text>
+      </stack>
+
+    </vertical>
+    <vertical bg='round-rect-panel' pad-right='45'  pad-left='2' pad-top='2' pad-bottom='6' spacing='3'>
+        
+      <text text='~Level'></text>
+      <horizontal spacing='-11' pad-top='5' color='Blue'>
+        <text text='Coins: ' color='Yellow'></text>
+        <text text='~Coins' color='Yellow'></text> 
+      </horizontal>
+        <horizontal>
+          <text text='Killed monsters: '/>
+      <text text='~killmonsters'></text>
+        </horizontal>
+      <text text='4'></text>
+      <text text='5'></text>
+      <text text='6'></text>
+      <text text='7'></text>
+      <text text='8'></text>
+      <text text='9'></text>
+      <text text='10'></text>
+    </vertical>
+  </vertical>
+  
 </bg>
