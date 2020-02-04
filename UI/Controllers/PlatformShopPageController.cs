@@ -3,6 +3,7 @@ using BeatSaberMarkupLanguage.Attributes;
 using BeatSaberMarkupLanguage.Components;
 using BeatSaberMarkupLanguage.Parser;
 using BeatSaberMarkupLanguage.ViewControllers;
+using CustomFloorPlugin;
 using CustomSaber.Data;
 using CustomSaber.Settings;
 using CustomSaber.Utilities;
@@ -17,7 +18,7 @@ namespace FightSabers.UI.Controllers
         public override string ResourceName => "FightSabers.UI.Views.PlatformShopPageView.bsml";
         public override string ContentFilePath => "C:/Users/Owen/Documents/GitHub/FightSabershop/UI/Views/PlatformShopPageView.bsml";
 
-        #region Properties
+        
 
         [UIParams]
         private BSMLParserParams parserParams;
@@ -36,30 +37,13 @@ namespace FightSabers.UI.Controllers
         }
 
 
-		[UIComponent("PlatformsList")]
-		public CustomListTableData customListTableData;
+        [UIComponent("PlatformsList")]
+        public CustomListTableData customListTableData;
 
-		[UIAction("PlatformSelect")]
-		private void PlatformSelect(TableView ignored1, int idx)
-		{
-			PlatformManager.Instance.SetPlatform(idx);
-			try
-			{
-				Resources.FindObjectsOfTypeAll<PlayerDataModelSO>()[0].playerData.overrideEnvironmentSettings.overrideEnvironments = false;
-			}
-			catch (Exception e)
-			{
-				Plugin.Log(e);
-			}
+        [UIAction("PlatformSelect")]
+        private void PlatformSelect(TableView ignored1, int idx) {
+            Console.WriteLine("oof");
+        }
 
-		
-
-		#endregion
-
-
-
-
-
-
-	}
+    }
 }

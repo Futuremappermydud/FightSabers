@@ -1,10 +1,9 @@
 ﻿<bg>
   <vertical child-control-height='false'>
-    <horizontal bg='panel-top' pad-left='15' pad-right='15' horizontal-fit='PreferredSize'>
-      <text text='FightSabers' align='Center' font-size='8'/>
-    </horizontal>
+
     <horizontal vertical-fit='PreferredSize'>
-      <text text='Profile' align='Center'/>
+
+      <raw-image id='img' pref-height='30' pref-width='30'></raw-image>
     </horizontal>
   </vertical>
 </bg>
