@@ -1,9 +1,13 @@
 ﻿<bg>
   <vertical child-control-height='false'>
+    <horizontal vertical-fit='PreferredSize' anchor-min-y='-10'>
 
-    <horizontal vertical-fit='PreferredSize'>
+      <image id='img'  pref-height='30' pref-width='30' Scale-X='10'></image>
 
-      <raw-image id='img' pref-height='30' pref-width='30'></raw-image>
+      <text text='~Name' color='Blue'/>
+    
+
+
     </horizontal>
   </vertical>
 </bg>
